@@ -3,6 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CdsModule } from '@cds/angular';
+import { ClarityModule } from '@clr/angular';
+import { ClarityIcons, homeIcon } from '@cds/core/icon'
+import { ClrIconModule } from '@clr/angular';
+import { CoreModule } from './core/core.module';
+import { HomeModule } from './home/home.module';
+import { AuthModule } from './auth/auth.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -10,7 +18,9 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CdsModule, ClarityModule,ClrIconModule,FormsModule ,
+    CoreModule,HomeModule,AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
