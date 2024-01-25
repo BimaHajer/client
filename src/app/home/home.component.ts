@@ -12,5 +12,6 @@ ClarityIcons.addIcons(userIcon,homeIcon,boltIcon,sadFaceIcon,bugIcon,shieldIcon,
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-
+  test=2
+  show=true
 }

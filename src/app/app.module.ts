@@ -11,7 +11,8 @@ import { CoreModule } from './core/core.module';
 import { HomeModule } from './home/home.module';
 import { AuthModule } from './auth/auth.module';
 import { FormsModule } from '@angular/forms';
-
+import { UserModule } from './user/user.module';
+UserModule
 @NgModule({
   declarations: [
     AppComponent
@@ -20,7 +21,7 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     CdsModule, ClarityModule,ClrIconModule,FormsModule ,
-    CoreModule,HomeModule,AuthModule
+    CoreModule,HomeModule,AuthModule,UserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
